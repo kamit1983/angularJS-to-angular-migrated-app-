@@ -28,7 +28,7 @@ var homeComponentController:any = function($scope, $window, $rootScope) {
 };
 homeComponentController.$inject = ['$scope', '$window', '$rootScope'];
 
-const homeModule = angular.module('myApp.home', ['ngRoute'])
+export const homeModule = angular.module('myApp.home', ['ngRoute'])
 .config(routeProviderConfig)
 .component('home',homeComponent);
 @NgModule({})

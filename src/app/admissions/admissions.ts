@@ -2,7 +2,6 @@
 import * as angular from 'angular';
 import {NgModule} from '@angular/core';
 import 'angular-route';
-import 'bootstrap/dist/js/boostrap.min';
 import { html} from './admissions.html';
 
 declare var $: any;
@@ -31,7 +30,7 @@ var admissionsComponentController:any = function($scope, $window, $rootScope) {
 
 };
 admissionsComponentController.$inject = ['$scope', '$window', '$rootScope'];
-export const admissionModule = angular.module('myApp.admissions', ['ngRoute','ui.bootstrap'])
+export const admissionModule = angular.module('myApp.admissions', ['ngRoute'])
 .config(routeProviderConfig)
 .component('admission',admissionComponent);
 
