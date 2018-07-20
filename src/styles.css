@@ -1,1 +1,236 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+  }
+  
+  
+  
+  /* Footer Styles */
+  
+  footer {
+    margin: 50px 0;
+  }
+  
+  /* Responsive Styles */
+  
+  @media(max-width:991px) {
+    .customer-img, .img-related {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media(max-width:767px) {
+    .img-portfolio {
+      margin-bottom: 15px;
+    }
+    header.carousel .carousel {
+      height: 70%;
+    }
+  }
+  
+  .table {
+    border-bottom: 0px !important;
+    background-color: #cccccc
+  }
+  
+  .table th, .table td {
+    border: 1px !important;
+  }
+  
+  .fixed-table-container {
+    border: 0px !important;
+  }
+  
+  .no-cursor {
+    cursor: none;
+  }
+  
+  
+  #contact {
+    background-color: #454545;
+    color: white;
+    height: 320px;
+  }
+  
+  #contactRow {
+    margin-top: 50px
+  }
+  
+  .carousel-inner img {
+    width: 100%;
+  }
+  
+  
+  .navbar-inverse .navbar-nav>.open>a {
+    /* background-color: darkgreen !important; */
+    border-radius: 10px;
+  }
+  
+  .navbar-inverse .navbar-nav>li>a {
+    color: white !important;
+  }
+  
+  .navbar-inverse .navbar-nav>li>a:hover {
+    color: silver !important;
+  }
+  
+  .carousel-inner .item {
+    height: 500px;
+    vertical-align: bottom !important;
+  }
+  
+  .panel {
+    background-color: white !important;
+  }
+  
+  .panel-body {
+    color: #f05f40 !important;
+    font-family: serif !important;
+    font-size: 18px !important;
+  }
+  
+  .card-container {
+    padding: 1em;
+    background: #f9f9f9;
+  }
+  
+  .blocks {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .block {
+    position: relative;
+    width: 33.3333333333%;
+    height: 325px;
+    max-height: 325px;
+    margin-right: 1em;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  .block:hover .block__body {
+    position: absolute;
+    top: 0;
+    background: #2980b9;
+    color: #fff;
+    height: 100%;
+    transition: top .5s;
+  }
+  
+  .block__body {
+    padding: 1em;
+    top: 100%;
+  }
+  
+  .gallery-image {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+  
+  a.gallery.thumbnail {
+    height: 100px !important;
+    overflow: hidden;
+  }
+  
+  .no-margin-padding {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  
+  .custom-menu {
+    margin-top: 25px;
+  }
+  
+  .scroll-left {
+    height: 25px;
+    /*margin-top: 30px;*/
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .scroll-left p {
+    background: red;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 25px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 20s linear infinite;
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  /* Move it (define the animation) */
+  
+  @-moz-keyframes scroll-left {
+    0% {
+      -moz-transform: translateX(100%);
+      background: red;
+    }
+    33% {
+      background: yellow;
+    }
+    66% {
+      background: red;
+    }
+    100% {
+      -moz-transform: translateX(-100%);
+      background: yellow;
+    }
+  }
+  
+  @-webkit-keyframes scroll-left {
+    0% {
+      -webkit-transform: translateX(100%);
+      background: red;
+    }
+    33% {
+      background: yellow;
+    }
+    66% {
+      background: red;
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+      background: yellow;
+    }
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      -moz-transform: translateX(100%);
+      /* Browser bug fix */
+      -webkit-transform: translateX(100%);
+      /* Browser bug fix */
+      transform: translateX(100%);
+      background: red;
+    }
+    33% {
+      background: yellow;
+    }
+    66% {
+      background: red;
+    }
+    100% {
+      -moz-transform: translateX(-100%);
+      /* Browser bug fix */
+      -webkit-transform: translateX(-100%);
+      /* Browser bug fix */
+      transform: translateX(-100%);
+      background: yellow;
+    }
+  }
+  
