@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular Migration</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.css">
+  <link href="https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-creative/master/css/creative.min.css" rel="stylesheet">
+  <style>
+    [ng-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+
+<body ng-cloak ng-controller="mainCtrl">
+     
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Angular 1.x to 5 migration</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav pull-right">
+              <li><a href="#!/home">Home</a></li>
+              <li><a href="#!/admissions">Route-2</a></li>
+              <li><a href="#!/career">Route-3</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  <div id='maincarousel' style="display:none">
+    <div class="row">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox" style="padding: 30px;">
+          <div class="item active">
+            <img ng-src="/assets/images/n0.png" alt="Chania">
+            <div class="carousel-caption">
+              <h3>Angular Migration</h3>
+              <p>1.x to 5+</p>
+            </div>
+          </div>
+          <div class="item ">
+            <img ng-src="/assets/images/n1.png" alt="Chania">
+          </div>
+          <div class="item ">
+            <img ng-src="/assets/images/n2.png" alt="Chania">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+    </div>
+  </div>
+  <div ng-view style="margin:10px 0 0 0"></div>
+  <section id="contact">
+    <div class="container">
+      <div class="row" id="contactRow">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading">Angular1 App Footer</h2>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="admissions/admissions.js"></script>
+  <script src="career/career.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.js'></script>
+
+</body>
+
+</html>
