@@ -1,7 +1,6 @@
 
 import * as angular from 'angular';
 import 'angular-route';
-import 'bootstrap';
 import {html} from './main.html';
 import { admissionModule } from './admissions/admissions';
 import { careerModule} from './career/career';
@@ -37,5 +36,5 @@ mainComponentController.$inject = ['$scope', '$window', '$rootScope'];
 export const Ng1AppModule = angular.module('Ng1AppModule', ['ngRoute',
 admissionModule.name,careerModule.name,homeModule.name])
 .config(routeProviderConfig)
-.component('main',mainComponent);
+//.component('main',mainComponent);
 

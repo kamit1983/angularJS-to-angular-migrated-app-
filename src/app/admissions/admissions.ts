@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import 'angular-route';
 import { html} from './admissions.html';
 
+
 declare var $: any;
 
 
@@ -18,7 +19,7 @@ const template = html;
 const admissionComponent = {
     template: template,
     bindings: {
-        customer: '<'
+        //customer: '<'
     },
     controller: admissionsComponentController
 };
@@ -26,8 +27,10 @@ const admissionComponent = {
 
 
 var admissionsComponentController:any = function($scope, $window, $rootScope) {
-  $('#maincarousel').hide();
+    this.$onInit = ()=>{
+        $('#maincarousel').show();
 
+  }
 };
 admissionsComponentController.$inject = ['$scope', '$window', '$rootScope'];
 export const admissionModule = angular.module('myApp.admissions', ['ngRoute'])

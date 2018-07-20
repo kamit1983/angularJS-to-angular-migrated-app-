@@ -23,7 +23,8 @@ const homeComponent = {
 
 
 var homeComponentController:any = function($scope, $window, $rootScope) {
-  $('#maincarousel').hide();
+  $('#maincarousel').show();
+  console.log('hi');
 
 };
 homeComponentController.$inject = ['$scope', '$window', '$rootScope'];
