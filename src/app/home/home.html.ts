@@ -8,7 +8,7 @@ export const html = `<div class="container">
     </div>
     <div class="panel-body">
       <div class="row text-center">
-        This is the home page of angular 1.x app.
+      This is AngularJS 1.x controller based Home component.
       </div>
     </div>
   </div>

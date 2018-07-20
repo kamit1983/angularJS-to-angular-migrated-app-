@@ -9,7 +9,7 @@ export const html = `<div class="container">
       </div>
     </div>
     <div class="panel-body">
-      This is the second route of angular 1.x app.
+    This is AngularJS 1.x controller based component2.
     </div>
   </div>
 </div>`

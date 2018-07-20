@@ -10,7 +10,8 @@ declare var $: any;
 
 let routeProviderConfig:any = function($routeProvider){
     $routeProvider.when('/admissions', {
-        template: '<admission></admission>'
+        template: html,
+        controller: 'admissionsCtrl'
     })
   };
   routeProviderConfig.$inject = ['$routeProvider'];
@@ -35,7 +36,12 @@ var admissionsComponentController:any = function($scope, $window, $rootScope) {
 admissionsComponentController.$inject = ['$scope', '$window', '$rootScope'];
 export const admissionModule = angular.module('myApp.admissions', ['ngRoute'])
 .config(routeProviderConfig)
-.component('admission',admissionComponent);
+//.component('admission',admissionComponent);
+.controller('admissionsCtrl', ['$scope', '$window', '$rootScope', function($scope, $window, $rootScope) {
+    $('#maincarousel').hide();
+  
+  }]);
+  
 
 @NgModule({})
 export class admissionNgModule {}

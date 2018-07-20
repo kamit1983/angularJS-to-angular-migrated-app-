@@ -6,7 +6,8 @@ import {html} from './home.html';
 declare var $: any;
 let routeProviderConfig:any = function($routeProvider){
     $routeProvider.when('/home', {
-        template: '<home></home>'
+        template: html,
+        controller: 'HomeCtrl'
     })
   };
   routeProviderConfig.$inject = ['$routeProvider'];
@@ -31,7 +32,10 @@ homeComponentController.$inject = ['$scope', '$window', '$rootScope'];
 
 export const homeModule = angular.module('myApp.home', ['ngRoute'])
 .config(routeProviderConfig)
-.component('home',homeComponent);
+.controller('HomeCtrl', ['$scope','$http', function($scope,$http) {
+    $('#maincarousel').show();
+  }]);
+//.component('home',homeComponent);
 @NgModule({})
 export class homeNgModule {}
 

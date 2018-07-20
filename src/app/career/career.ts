@@ -6,7 +6,8 @@ import {html } from './career.html';
 declare var $: any;
 var routeProviderConfig:any = function($routeProvider){
     $routeProvider.when('/career', {
-        template: '<career></career>'
+        template:html,
+        controller: 'CareerCtrl'
     })
   };
 
@@ -31,7 +32,11 @@ careerComponentController.$inject = ['$scope', '$window', '$rootScope'];
 
 export const careerModule = angular.module('myApp.career', ['ngRoute'])
 .config(routeProviderConfig)
-.component('career',careerComponent);
+//.component('career',careerComponent);
+.controller('CareerCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
+    $('#maincarousel').hide();
+  }]);
+
 
 @NgModule({})
 export class careerNgModule {}
